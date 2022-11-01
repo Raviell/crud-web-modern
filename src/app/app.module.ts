@@ -12,6 +12,7 @@ import { HomeComponent } from './components/views/home/home.component';
 import { CardsCrudComponent } from './components/views/cards-crud/cards-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { CardCreateComponent } from './components/card/card-create/card-create.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,16 +24,15 @@ import { CardCreateComponent } from './components/card/card-create/card-create.c
     HomeComponent,
     CardsCrudComponent,
     RedDirective,
-    CardCreateComponent,
-    
-    
+    CardCreateComponent,   
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

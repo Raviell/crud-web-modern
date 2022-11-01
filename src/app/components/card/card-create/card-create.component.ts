@@ -1,3 +1,4 @@
+import { Card } from './../../../models/interfaces/card';
 import { Router } from '@angular/router';
 import { CardService } from './../../../services/card/card.service';
 import { Component, OnInit } from '@angular/core';
@@ -9,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardCreateComponent implements OnInit {
 
+  card: Card = {
+    name: 'Summoned Skull',
+    price: 299.88
+  }
+
   constructor(
     private cardservice: CardService,
-    private router: Router
+    private router: Router,
+  
     ) { }
 
   ngOnInit(): void {
@@ -19,7 +26,11 @@ export class CardCreateComponent implements OnInit {
   }
 
   createCard(): void {
-    this.cardservice.showMessage('Operação executada com sucesso!')
+    this.cardservice.create(this.card).subscribe(() => {
+      this.cardservice.showMessage('Card created!')
+      this.router.navigate(['cards'])
+    })
+   
   }
 
   cancel(){
