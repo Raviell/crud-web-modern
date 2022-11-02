@@ -1,4 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+$crud-web-modern-primary: mat.define-palette(mat.$indigo-palette);
+$crud-web-modern-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$crud-web-modern-warn: mat.define-palette(mat.$red-palette);
+
+$crud-web-modern-theme: mat.define-light-theme((
+  color: (
+    primary: $crud-web-modern-primary,
+    accent: $crud-web-modern-accent,
+    warn: $crud-web-modern-warn,
+  )
+));
+
+@include mat.all-component-themes($crud-web-modern-theme);
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.msg-sucess {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.msg-error {
+  background-color: red;
+  color: #fff;
+}
+
+

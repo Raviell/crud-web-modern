@@ -1,14 +1,44 @@
 {
   "cards": [
     {
-      "name": "Summoned Skull",
-      "price": 299.88,
+      "name": "Elemental Hero Stratos",
+      "price": "17.89",
       "id": 1
     },
     {
-      "name": "Summoned Skull",
-      "price": 299.88,
+      "name": "Elemental Hero Sparkman",
+      "price": "2.99",
       "id": 2
+    },
+    {
+      "name": "Elemental Hero Flame Wigman",
+      "price": "21.33",
+      "id": 3
+    },
+    {
+      "name": "Dark Magician",
+      "price": "44.87",
+      "id": 4
+    },
+    {
+      "name": "Summoned Skull",
+      "price": "29.45",
+      "id": 5
+    },
+    {
+      "name": "Call of the Haunted",
+      "price": "12.33",
+      "id": 6
+    },
+    {
+      "name": "Mirror Force",
+      "price": "39.90",
+      "id": 7
+    },
+    {
+      "name": "Kuriboh",
+      "price": "9.99",
+      "id": 8
     }
   ]
 }

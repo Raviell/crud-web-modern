@@ -1,5 +1,5 @@
 export interface Card {
     id?: number
     name: string
-    price: number
+    price: number | null
 }

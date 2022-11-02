@@ -11,10 +11,10 @@ import { Component, OnInit } from '@angular/core';
 export class CardCreateComponent implements OnInit {
 
   card: Card = {
-    name: 'Summoned Skull',
-    price: 299.88
+    name: "",
+    price: null
   }
-
+    
   constructor(
     private cardservice: CardService,
     private router: Router,
